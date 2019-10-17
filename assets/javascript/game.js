@@ -9,7 +9,7 @@ var lossezDiv = document.getElementById("lossez");
 targetDiv.textContent = 0;
 
 var guessezDiv = document.getElementById("guessezLeft");
-targetDiv.textContent = 0;
+targetDiv.textContent = 9;
 
 var letterzDiv = document.getElementById("letterz");
 targetDiv.textContent = 0;

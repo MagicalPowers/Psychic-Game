@@ -1,7 +1,10 @@
+//hopefully this is helpful
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
+//empty div for later flex storage
 var userChoicez = [];
 
+//i need to somehow update these HTML elements to display the current values
 var winzDiv = document.getElementById("winz");
 targetDiv.textContent = 0;
 

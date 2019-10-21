@@ -29,12 +29,19 @@ function trashtrashtrashtrash() {
 
 };
 
-function trashtrashtrashtrash() {
+function trashtrashtrashtrashtrash() {
 
 };
 
-function trashtrashtrashtrashtrash() {
+function trashtrashtrashtrashtrashthrash() {
 
+};
+
+function trashresettrash() {
+    trashw = 0;
+    trashl = 0; 
+    trashleft = 9;
+    trash = [];
 };
 
 

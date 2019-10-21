@@ -44,6 +44,10 @@ function trashresettrash() {
     trash = [];
 };
 
-
+//go.|=u(|<.y32$e1|=
 //run this trash after the html loads
+
+// stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
+
+
 

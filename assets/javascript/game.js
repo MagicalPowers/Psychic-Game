@@ -15,6 +15,7 @@ var trashw = 0;
 var trashl = 0;
 var trashleft = 9;
 var trash = [];
+var trashletter = null;
 var trashcomputer = trashlist[Math.floor(Math.random()*trashlist.length)];
 
 function trashtrash() {
@@ -44,10 +45,32 @@ function trashresettrash() {
     trash = [];
 };
 
-//go.|=u(|<.y32$e1|=
+//go.|=u(|<.y32$31|=
 //run this trash after the html loads
 
-// stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
+//stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
 
+document.addEventListener("DOMContentLoaded", function(event) { 
+    document.onkeyup = function(event) {
+        //because i want it to be lowercase. thats why.
+        var trashuser = String.fromCharCode(event.keycode).toLowerCase();
+        var trashman = trashlist.includes(trashuser);
+        console.log("man, what did i pay fourteen thousand dollars for?");
+        if(trashman ===false) {
+            alert("you're almost as terrible as me.");
+            return false;
+        } else if(trashman ===true) {
+            trash.push(trashuser);
+            trashtrashtrashtrashtrashthrash();
+            trashtrashtrashtrashtrash();
 
+            if (trashleft > 0) {
+                if (trashuser == trashletter) {
+                    trashw++;
+                    document.getElementById("#")
+                }
+            }
+        }
+    }
+  });
 

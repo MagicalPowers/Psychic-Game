@@ -53,7 +53,7 @@ function trashresettrash() {
 document.addEventListener("DOMContentLoaded", function(event) { 
     document.onkeyup = function(event) {
         //because i want it to be lowercase. thats why.
-        var trashuser = String.fromCharCode(event.keycode).toLowerCase();
+        var trashuser = String.fromCharCode(event.keycode);
         var trashman = trashlist.includes(trashuser);
         console.log("man, what did i pay fourteen thousand dollars for?");
         if(trashman ===false) {
@@ -67,9 +67,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             if (trashleft > 0) {
                 if (trashuser == trashletter) {
                     trashw++;
-                    document.getElementById("#")
+                    document.getElementById("#trashjunk").innerHTML = "non-losses: " + trashw;
+                    trashresettrash();
                 }
+            } else if(trashleft == 0) {
+                trashl++;
+                document.getElementById("#trashdebris").innerHTML = "LOSSES: " + trashl;
+                trashresettrash();
+
             }
+            return false;
+        }
+        else {
+            alert("iT's A tRaP!111!");
         }
     }
   });

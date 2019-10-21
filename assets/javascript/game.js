@@ -49,13 +49,14 @@ function trashresettrash() {
 //run this trash after the html loads
 
 //stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
-
-document.addEventListener("DOMContentLoaded", function(event) { 
-    document.onkeyup = function(event) {
-        //because i want it to be lowercase. thats why.
+document.onkeyup = function(event) {
+        //because i want it to be lowercase. thats why. or not. whatever. get a life.
         var trashuser = String.fromCharCode(event.keycode);
         var trashman = trashlist.includes(trashuser);
         console.log("man, what did i pay fourteen thousand dollars for?");
+        console.log(trashman);
+        console.log(trashuser);
+        console.log(trashlist);
         if(trashman ===false) {
             alert("you're almost as terrible as me.");
             return false;
@@ -81,6 +82,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         else {
             alert("iT's A tRaP!111!");
         }
-    }
-  });
+  };
 

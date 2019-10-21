@@ -51,16 +51,16 @@ function trashresettrash() {
 //stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
 document.onkeyup = function(event) {
         //because i want it to be lowercase. thats why. or not. whatever. get a life.
-        var trashuser = String.fromCharCode(event.keycode);
+        var trashuser = event.key;
         var trashman = trashlist.includes(trashuser);
         console.log("man, what did i pay fourteen thousand dollars for?");
         console.log(trashman);
         console.log(trashuser);
         console.log(trashlist);
-        if(trashman ===false) {
+        if(trashman === false) {
             alert("you're almost as terrible as me.");
             return false;
-        } else if(trashman ===true) {
+        } else if(trashman === true) {
             trash.push(trashuser);
             trashtrashtrashtrashtrashthrash();
             trashtrashtrashtrashtrash();
@@ -82,5 +82,6 @@ document.onkeyup = function(event) {
         else {
             alert("iT's A tRaP!111!");
         }
+        console.log(trashw);
   };
 

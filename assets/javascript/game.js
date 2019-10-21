@@ -8,3 +8,35 @@
 
 //how can i write logic and be original? 
 
+//Everything following this comment is stolen.
+
+var trashlist = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var trashw = 0;
+var trashl = 0;
+var trashleft = 9;
+var trash = [];
+var trashcomputer = trashlist[Math.floor(Math.random()*trashlist.length)];
+
+function trashtrash() {
+
+};
+
+function trashtrashtrash() {
+
+};
+
+function trashtrashtrashtrash() {
+
+};
+
+function trashtrashtrashtrash() {
+
+};
+
+function trashtrashtrashtrashtrash() {
+
+};
+
+
+//run this trash after the html loads
+

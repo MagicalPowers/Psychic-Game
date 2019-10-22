@@ -4,7 +4,7 @@ homework due Oct 17
 Photo by Paolo Nicolello on Unsplash
 
 
-Deleted due to accusations of theft.
+Deleted due to, well, perhaps we shouldn't speak about that overtly.
 
 source: https://github.com/Ednas/Psychic-Game
 source: class activities

@@ -46,11 +46,11 @@ function trashresettrash() {
 };
 
 //go.|=u(|<.y32$31|=
-//run this trash after the html loads
+//run this trash after the html loads. NOPE.
 
 //stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
 document.onkeyup = function(event) {
-        //because i want it to be lowercase. thats why. or not. whatever. get a life.
+        //because i want it to be lowercase. thats why. or not. whatever. get a life. move on.
         var trashuser = event.key;
         var trashman = trashlist.includes(trashuser);
         console.log("man, what did i pay fourteen thousand dollars for?");

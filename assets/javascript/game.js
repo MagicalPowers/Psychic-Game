@@ -23,7 +23,8 @@ function trashtrash() {
 };
 
 function trashtrashtrash() {
-
+    this.trashletter = this.trashlist[Math.floor(Math.random() * this.trashlist.length)];
+     //because i  want a random number out of 26 choices from the array trashlist. im using this becasue i want global authority.
 };
 
 function trashtrashtrashtrash() {
@@ -31,11 +32,13 @@ function trashtrashtrashtrash() {
 };
 
 function trashtrashtrashtrashtrash() {
+    document.getElementById("trashjunkletterz").text = "these are things you have guessed: " + trash.join(", ");
+    //becasue i want commas and spaces separating the entries
 
 };
 
 function trashtrashtrashtrashtrashthrash() {
-
+    document.getElementById("trashjunkleft").text = "you have this guess quantity left: " + trashleft;
 };
 
 function trashresettrash() {
@@ -43,7 +46,15 @@ function trashresettrash() {
     trashl = 0; 
     trashleft = 9;
     trash = [];
+    trashtrashtrash();
+    trashtrashtrashtrashtrash();
+    trashtrashtrashtrashtrashthrash();
+
 };
+
+trashtrashtrash();
+trashtrashtrashtrashtrash();
+// establishes an empty guess list and a new computer guess. i cant think of an original way to write this.
 
 //im dumb
 //run this trash after the html loads. NOPE.
@@ -64,16 +75,17 @@ document.onkeyup = function(event) {
             trash.push(trashuser);
             trashtrashtrashtrashtrashthrash();
             trashtrashtrashtrashtrash();
+            console.log(trashletter);
 
             if (trashleft > 0) {
                 if (trashuser == trashletter) {
                     trashw++;
-                    document.getElementById("#trashjunk").innerHTML = "non-losses: " + trashw;
+                    document.getElementById("trashjunk").innerHTML = "non-losses: " + trashw;
                     trashresettrash();
                 }
             } else if(trashleft == 0) {
                 trashl++;
-                document.getElementById("#trashdebris").innerHTML = "LOSSES: " + trashl;
+                document.getElementById("trashdebris").innerHTML = "LOSSES: " + trashl;
                 trashresettrash();
 
             }
@@ -83,5 +95,6 @@ document.onkeyup = function(event) {
             alert("iT's A tRaP!111!");
         }
         console.log(trashw);
+        console.log
   };
 

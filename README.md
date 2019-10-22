@@ -1,6 +1,8 @@
 # Psychic-Game
 homework due Oct 17
 
+https://magicalpowers.github.io/Psychic-Game/
+
 Photo by Paolo Nicolello on Unsplash
 
 

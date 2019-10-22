@@ -16,6 +16,7 @@ var trashl = 0;
 var trashleft = 9;
 var trash = [];
 var trashletter = null;
+var trashuser = 0;
 var trashcomputer = trashlist[Math.floor(Math.random()*trashlist.length)];
 
 function trashtrash() {
@@ -32,7 +33,7 @@ function trashtrashtrashtrash() {
 };
 
 function trashtrashtrashtrashtrash() {
-    document.getElementById("trashjunkletterz").text = "these are things you have guessed: " + trash.join(", ");
+    document.getElementById("trashjunkletterz").text = ("these are things you have guessed: " + trash);
     //becasue i want commas and spaces separating the entries
 
 };
@@ -54,6 +55,7 @@ function trashresettrash() {
 
 trashtrashtrash();
 trashtrashtrashtrashtrash();
+console.log(trashletter);
 // establishes an empty guess list and a new computer guess. i cant think of an original way to write this.
 
 //im dumb
@@ -61,40 +63,52 @@ trashtrashtrashtrashtrash();
 
 //stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
 document.onkeyup = function(event) {
-        //because i want it to be lowercase. thats why. or not. whatever. get a life. move on.
+        //because i want it to be lowercase. thats why. or not. whatever. move on.
         var trashuser = event.key;
         var trashman = trashlist.includes(trashuser);
-        console.log("stop");
-        console.log(trashman);
-        console.log(trashuser);
-        console.log(trashlist);
+        // console.log("stop");
+        // console.log(trashman);
+        // console.log(trashuser);
+        // console.log(trashlist);
         if(trashman === false) {
-            alert("you're almost as terrible as me.");
+            alert("sheesh");
             return false;
         } else if(trashman === true) {
             trash.push(trashuser);
             trashtrashtrashtrashtrashthrash();
             trashtrashtrashtrashtrash();
-            console.log(trashletter);
+            console.log(trash);
 
             if (trashleft > 0) {
                 if (trashuser == trashletter) {
                     trashw++;
-                    document.getElementById("trashjunk").innerHTML = "non-losses: " + trashw;
+                    document.getElementById("trashdebris").innerHTML = "non-losses: " + trashw;
                     trashresettrash();
-                }
-            } else if(trashleft == 0) {
-                trashl++;
-                document.getElementById("trashdebris").innerHTML = "LOSSES: " + trashl;
-                trashresettrash();
 
-            }
+                } else {
+                    trashleft--;
+                    console.log(trashleft)
+                    trashtrashtrashtrashtrashthrash();
+                    trashtrashtrashtrashtrash();
+                    if(this.trashleft == 0) {
+                        //this.trashl++;
+                        document.getElementById("trashjunk").innerHTML = "LOSSES: " + trashl;
+                        trashresettrash();
+                    }
+
+                }
+                
+                 
             return false;
         }
         else {
             alert("iT's A tRaP!111!");
+            trashresettrash();
+            trashl++;
+            document.getElementById("trashjunk").innerHTML = "LOSSES: " + trashl;
         }
         console.log(trashw);
-        console.log
-  };
-
+        console.log(trashletter);
+        console.log(trash);
+  }
+};

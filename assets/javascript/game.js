@@ -45,7 +45,7 @@ function trashresettrash() {
     trash = [];
 };
 
-//go.|=u(|<.y32$31|=
+//im dumb
 //run this trash after the html loads. NOPE.
 
 //stolen from https://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery

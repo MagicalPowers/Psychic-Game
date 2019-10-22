@@ -53,7 +53,7 @@ document.onkeyup = function(event) {
         //because i want it to be lowercase. thats why. or not. whatever. get a life. move on.
         var trashuser = event.key;
         var trashman = trashlist.includes(trashuser);
-        console.log("man, what did i pay fourteen thousand dollars for?");
+        console.log("stop");
         console.log(trashman);
         console.log(trashuser);
         console.log(trashlist);

@@ -33,13 +33,13 @@ function trashtrashtrashtrash() {
 };
 
 function trashtrashtrashtrashtrash() {
-    document.getElementById("trashjunkletterz").text = ("these are things you have guessed: " + trash);
+    document.getElementById("trashjunkletterz").innerHTML = ("these are things you have guessed: " + trash);
     //becasue i want commas and spaces separating the entries
 
 };
 
 function trashtrashtrashtrashtrashthrash() {
-    document.getElementById("trashjunkleft").text = "you have this guess quantity left: " + trashleft;
+    document.getElementById("trashjunkleft").innerHTML = "you have this guess quantity left: " + trashleft;
 };
 
 function trashresettrash() {
